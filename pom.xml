@@ -29,6 +29,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>edu.learning.datastructure.java17.data</groupId>
+            <artifactId>cst3650</artifactId>
+            <version>1.07</version>
+        </dependency>
+
     </dependencies>
 
 </project>

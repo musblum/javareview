@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: edu.citytech.javareview.datastructure.T1_Array
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.020 s <<< FAILURE! -- in edu.citytech.javareview.datastructure.T1_Array
+edu.citytech.javareview.datastructure.T1_Array.t1 -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Duplicate local variable numbers
+
+	at edu.citytech.javareview.datastructure.T1_Array.t1(T1_Array.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
