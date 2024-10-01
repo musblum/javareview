@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: edu.citytech.javareview.datastructure.T4_DynamicArray
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.028 s <<< FAILURE! -- in edu.citytech.javareview.datastructure.T4_DynamicArray
+edu.citytech.javareview.datastructure.T4_DynamicArray.t2 -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <11> but was: <7>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:538)
+	at edu.citytech.javareview.datastructure.T4_DynamicArray.t2(T4_DynamicArray.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+edu.citytech.javareview.datastructure.T4_DynamicArray.t4 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at edu.citytech.javareview.datastructure.DynamicArray.add(DynamicArray.java:41)
+	at edu.learning.datastructure.java17.facade.IModify.add(IModify.java:11)
+	at edu.citytech.javareview.datastructure.T4_DynamicArray.beforeEachMethod(T4_DynamicArray.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

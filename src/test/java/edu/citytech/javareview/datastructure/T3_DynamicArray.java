@@ -53,6 +53,7 @@ public class  T3_DynamicArray {
         int expected = 7;
         assertEquals(expected, actual);
 
+        da.toString(System.out::println);
         dynamicArray.toString(System.out::println);
         System.out.println("Abdallah, salem " + new java.util.Date());
     }

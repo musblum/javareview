@@ -39,12 +39,12 @@ public class DynamicArray<T> extends AbstractList<T> {
         }
 
         items[index++] = item;
-        return false;
+        return true;
     }
 
     @Override
     public String toString() {
-        return "DynamicArray" + util.toString(super.items, size());
+        return "DynamicArray allocated size: " + items.length + " " + util.toString(super.items, size());
     }
 
     @Override
@@ -67,4 +67,43 @@ public class DynamicArray<T> extends AbstractList<T> {
         }
 
     }
+
+    @Override
+    public T removeLast(){
+        T t = items[size() - 1];
+        super.decrementSize();
+        return t;
+    }
+
+    @Override
+    public Optional<T> getLastItem() {
+        
+        Optional<T> optional = Optional.empty();
+        if(size() > 0)
+            optional = optional.of(items[size() - 1]);
+        return optional;
+    }
+
+    @Override
+    public void removeAll() {
+        super.index = 0;
+        super.resetSize();
+        super.items = this.intFunction.apply(5);
+    }
+
+    @Override
+    public T removeAt(int index) {
+        T t = super.items[index] = null;
+        super.decrementSize(); 
+        for(int i = index +1; i < size(); i++){
+            super.items[i - 1] = super.items[i];
+            super.items[i] = null;
+        }
+        return t;
+        
+    }
+
+    
+    
+    
 }
