@@ -94,16 +94,15 @@ public class DynamicArray<T> extends AbstractList<T> {
     @Override
     public T removeAt(int index) {
         T t = super.items[index] = null;
-        super.decrementSize(); 
         for(int i = index +1; i < size(); i++){
             super.items[i - 1] = super.items[i];
             super.items[i] = null;
         }
+        super.decrementSize(); 
         return t;
         
     }
 
-    
     
     
 }

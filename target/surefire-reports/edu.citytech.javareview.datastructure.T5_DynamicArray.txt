@@ -1,0 +1,101 @@
+-------------------------------------------------------------------------------
+Test set: edu.citytech.javareview.datastructure.T5_DynamicArray
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.040 s <<< FAILURE! -- in edu.citytech.javareview.datastructure.T5_DynamicArray
+edu.citytech.javareview.datastructure.T5_DynamicArray.t2 -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <10> but was: <20>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at edu.citytech.javareview.datastructure.T5_DynamicArray.t2(T5_DynamicArray.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+edu.citytech.javareview.datastructure.T5_DynamicArray.t3 -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <10> but was: <30>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at edu.citytech.javareview.datastructure.T5_DynamicArray.t3(T5_DynamicArray.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+edu.citytech.javareview.datastructure.T5_DynamicArray.t4 -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: Index 40 out of bounds for length 40
+	at edu.citytech.javareview.datastructure.DynamicArray.add(DynamicArray.java:41)
+	at edu.learning.datastructure.java17.facade.IModify.add(IModify.java:11)
+	at edu.citytech.javareview.datastructure.T5_DynamicArray.beforeEachMethod(T5_DynamicArray.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+edu.citytech.javareview.datastructure.T5_DynamicArray.t5 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: Index 41 out of bounds for length 40
+	at edu.citytech.javareview.datastructure.DynamicArray.add(DynamicArray.java:41)
+	at edu.learning.datastructure.java17.facade.IModify.add(IModify.java:11)
+	at edu.citytech.javareview.datastructure.T5_DynamicArray.beforeEachMethod(T5_DynamicArray.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+edu.citytech.javareview.datastructure.T5_DynamicArray.t6 -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <19> but was: <58>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at edu.citytech.javareview.datastructure.T5_DynamicArray.t6(T5_DynamicArray.java:90)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+edu.citytech.javareview.datastructure.T5_DynamicArray.t7 -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <-1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at edu.citytech.javareview.datastructure.T5_DynamicArray.t7(T5_DynamicArray.java:101)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+edu.citytech.javareview.datastructure.T5_DynamicArray.t8 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at edu.citytech.javareview.datastructure.DynamicArray.add(DynamicArray.java:41)
+	at edu.learning.datastructure.java17.facade.IModify.add(IModify.java:11)
+	at edu.citytech.javareview.datastructure.T5_DynamicArray.beforeEachMethod(T5_DynamicArray.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+edu.citytech.javareview.datastructure.T5_DynamicArray.t9 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 5
+	at edu.citytech.javareview.datastructure.DynamicArray.add(DynamicArray.java:41)
+	at edu.learning.datastructure.java17.facade.IModify.add(IModify.java:11)
+	at edu.citytech.javareview.datastructure.T5_DynamicArray.beforeEachMethod(T5_DynamicArray.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+edu.citytech.javareview.datastructure.T5_DynamicArray.t10 -- Time elapsed: 0 s <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 5
+	at edu.citytech.javareview.datastructure.DynamicArray.add(DynamicArray.java:41)
+	at edu.learning.datastructure.java17.facade.IModify.add(IModify.java:11)
+	at edu.citytech.javareview.datastructure.T5_DynamicArray.beforeEachMethod(T5_DynamicArray.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

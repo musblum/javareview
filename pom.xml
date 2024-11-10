@@ -32,7 +32,7 @@
         <dependency>
             <groupId>edu.learning.datastructure.java17.data</groupId>
             <artifactId>cst3650</artifactId>
-            <version>1.07</version>
+            <version>1.08</version>
         </dependency>
 
     </dependencies>

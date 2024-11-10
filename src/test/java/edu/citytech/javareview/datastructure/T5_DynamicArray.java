@@ -55,6 +55,7 @@ public class T5_DynamicArray {
     void t4() {  
         
         dynamicArray.add(numbers);
+        dynamicArray.toString(System.out::println);
         dynamicArray.removeAt(21);
         int expected = 21;
         int actual = dynamicArray.size(); 
@@ -105,6 +106,7 @@ public class T5_DynamicArray {
     @DisplayName("(1) Test for Simple DynamicArray")
     void t8() {  
         numbers[0] = null;
+        dynamicArray.toString(System.out::println);
         dynamicArray.removeAt(0);
         int expected = 10;
         int actual = dynamicArray.size(); 
