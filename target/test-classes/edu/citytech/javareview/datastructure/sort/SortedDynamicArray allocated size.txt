@@ -1,0 +1,15 @@
+SortedDynamicArray allocated size: 320  current size is: 177, content: [symbol=AAT, symbol=ADC, symbol=AHH, symbol=AHR, symbol=AHT, symbol=AKR, symbol=ALEX, symbol=ALX, symbol=AMH, symbol=AMT, 
+symbol=APLE, symbol=ARE, symbol=ASPS, symbol=AVB, symbol=BDN, symbol=BEKE, symbol=BFS, symbol=BHR, symbol=BNL, symbol=BRT, symbol=BRX, symbol=BXP, symbol=CBRE, symbol=CCI, symbol=CDP, symbol=CHCT, 
+symbol=CIO, symbol=CLDT, symbol=CLPR, symbol=CMCT, symbol=COLD, symbol=COMP, symbol=CPT, symbol=CSGP, symbol=CSR, symbol=CTO, symbol=CTRE, symbol=CUBE, symbol=CURB, symbol=CUZ, symbol=CWK, symbol=DEA, 
+symbol=DEI, symbol=DHC, symbol=DLR, symbol=DOC, symbol=DOUG, symbol=DRH, symbol=EGP, symbol=ELME, symbol=ELS, symbol=EPR, symbol=EPRT, symbol=EQC, symbol=EQIX, symbol=EQR, symbol=ESRT, symbol=ESS, 
+symbol=EXPI, symbol=EXR, symbol=FCPT, symbol=FOR, symbol=FPI, symbol=FR, symbol=FRT, symbol=FSP, symbol=FTHM, symbol=GIPR, symbol=GLPI, symbol=GMRE, symbol=GNL, symbol=GOOD, symbol=GTY, symbol=HHH, 
+symbol=HIW, symbol=HLDCY, symbol=HOUS, symbol=HPP, symbol=HR, symbol=HST, symbol=IIPR, symbol=ILPT, symbol=INN, symbol=INVH, symbol=IRM, symbol=IRT, symbol=IVT, symbol=JBGS, symbol=JLL, symbol=KIM, 
+symbol=KRC, symbol=KRG, symbol=KW, symbol=LAMR, symbol=LAND, symbol=LB, symbol=LINE, symbol=LTC, symbol=LUXH, symbol=LXP, symbol=MAA, symbol=MAC, symbol=MDV, symbol=MMI, symbol=MPW, symbol=NHI, 
+symbol=NLCP, symbol=NMRK, symbol=NNN, symbol=NSA, symbol=NTST, symbol=NXRT, symbol=NYC, symbol=O, symbol=OHI, symbol=OLP, symbol=OMH, symbol=ONL, symbol=OPAD, symbol=OPEN, symbol=OPI, symbol=OUT, 
+symbol=PCH, symbol=PDM, symbol=PEB, symbol=PECO, symbol=PGRE, symbol=PINE, symbol=PK, symbol=PKST, symbol=PLD, symbol=PLYM, symbol=PSA, symbol=PSTL, symbol=RDFN, symbol=REAX, symbol=REG, symbol=REXR, 
+symbol=RHP, symbol=RLJ, symbol=RMAX, symbol=RMR, symbol=ROIC, symbol=RYN, symbol=SAFE, symbol=SBAC, symbol=SBRA, symbol=SHO, symbol=SILA, symbol=SITC, symbol=SKT, symbol=SLG, symbol=SOHO, symbol=SPG, 
+symbol=STAG, symbol=SUHJY, symbol=SUI, symbol=SVC, symbol=TRC, symbol=TRNO, symbol=UDR, symbol=UE, symbol=UMH, symbol=UNIT, symbol=VICI, symbol=VNO, symbol=VONOY, symbol=VRE, symbol=VTMX, symbol=VTR, 
+symbol=WELL, symbol=WPC, symbol=WSR, symbol=WY, symbol=XHR, symbol=Z, symbol=ZG]
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DynamicArray allocated size: 10  current size is: 1, content: [KeyAndValue [key=148, value=symbol=SILA]]
+iteration count: 8

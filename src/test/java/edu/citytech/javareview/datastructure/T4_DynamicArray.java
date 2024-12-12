@@ -23,7 +23,7 @@ public class T4_DynamicArray {
     @DisplayName("(1) Test for Simple DynamicArray")
     void t1() {  
         
-        int lastNumber = dynamicArray.removeLast();
+        int lastNumber = dynamicArray.removeLast().get();
         int expected = 10;
         int actual = dynamicArray.size(); 
         dynamicArray.toString(System.out::println);
