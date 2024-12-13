@@ -3,22 +3,26 @@ package edu.citytech.javareview.datastructure.dictionary;
 import java.util.Optional;
 import java.util.function.BiConsumer;
 
+import edu.learning.datastructure.java17.facade.AbstractDataType;
 import edu.learning.datastructure.java17.facade.IDictionary;
 import edu.learning.datastructure.java17.facade.IModelEntry;
 
 public class Dictionary<K extends Comparable<K>, V> implements IDictionary <K, V> {
 
     private int capacity = 15;
-    private Object[] buckets = null;
+    private final Bucket<K,V>[] buckets;
+
     private int size;
     private BiConsumer<Integer, IModelEntry<K,V>> biConsumer = (k,v) -> {};
 
+    @SuppressWarnings("unchecked")
     public Dictionary(){
-        buckets = new Object[capacity];
+        buckets = new Bucket[capacity];
     }
+    @SuppressWarnings("unchecked")
     public Dictionary(int capacity){
         this.capacity = capacity;
-        buckets = new Object[capacity];
+        buckets = new Bucket[capacity];
     }
 
     @Override
@@ -31,8 +35,13 @@ public class Dictionary<K extends Comparable<K>, V> implements IDictionary <K, V
             biConsumer.accept(index,value);
         }
 
-        buckets[index] = value;
-        size++;
+        if(isEmpty){
+        buckets[index] = new Bucket<>();
+        }
+
+        Entry<K,V> entry = new Entry<>(value.getKey(), value.getValue());
+        size += buckets[index].addEntry(entry);
+
     }
 
     @Override
@@ -44,12 +53,12 @@ public class Dictionary<K extends Comparable<K>, V> implements IDictionary <K, V
     public Optional<V> get(K key) {
         int index = getIndex(key);
         @SuppressWarnings("unchecked")
-        V dto = (V)buckets[index];
 
-        if(dto != null)
-            return Optional.of(dto);
-        else 
-            return Optional.empty();
+        AbstractDataType<Entry<K, V>>  entries = buckets[index].getEntries();
+        Optional<Entry<K,V>> entryfound  = entries.findFirst(new Entry<>(key));
+        V value = entryfound.get().getValue();
+
+        return Optional.of(value);
 
     }
 

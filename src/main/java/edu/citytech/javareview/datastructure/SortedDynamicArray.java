@@ -39,18 +39,17 @@ public class SortedDynamicArray<T extends Comparable<T>> extends DynamicArray<T>
         return iterationCount;
     }
 
-
     @Override
     public Optional<T> findFirst(T value) {
 
-        Optional<T> optional = Optional.empty();
-
         for (int i = 0; i < size(); i++) {
-           if(value == super.items[i]){
-            return Optional.of(items[i]);
-           } 
+            boolean isFound = value.compareTo(items[i]) == 0;
+            if (isFound) {
+                return Optional.of(items[i]);
+            }
         }
-       return Optional.empty(); 
-        
+        return Optional.empty();
+
     }
+
 }
