@@ -1,5 +1,7 @@
 package edu.citytech.javareview.datastructure.avl;
 
+import java.util.function.Consumer;
+
 public class AVLHelper {
 
     static <T extends Comparable<T>> boolean isLessThan(T value1, T value2) {
@@ -67,5 +69,15 @@ public class AVLHelper {
         if (node == null)
             return 0;
         return height(node.left) - height(node.right);
+    }
+
+    // A utility function to print preorder
+    // traversal of the tree
+    static <T extends Comparable<T>> void preOrder(AVLNode<T> root, Consumer<T> consumer) {
+        if (root != null) {
+            consumer.accept(root.key);
+            preOrder(root.left, consumer);
+            preOrder(root.right, consumer);
+        }
     }
 }

@@ -1,8 +1,10 @@
 package edu.citytech.javareview.datastructure.avl;
 
+import edu.citytech.javareview.datastructure.bst.BSTOrder;
 import edu.learning.datastructure.java17.facade.AbstractDataType;
 
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static edu.citytech.javareview.datastructure.avl.AVLHelper.*;
 public class AVLTree<T extends Comparable<T>> extends AbstractDataType<T> {
@@ -10,9 +12,17 @@ public class AVLTree<T extends Comparable<T>> extends AbstractDataType<T> {
 
     private AVLNode<T> root;
 
+    private int size = 0;
+
+    @Override
+    public int size() {
+        return this.size;
+    }
+
     @Override
     public boolean add(T item) {
         this.root = insert(root, item);
+        size++;
         return true;
     }
 
@@ -97,4 +107,28 @@ public class AVLTree<T extends Comparable<T>> extends AbstractDataType<T> {
         return value;
     }
 
+    @Override
+    public String toString() {
+
+
+        StringBuilder sb = new StringBuilder();
+        AtomicInteger ai = new AtomicInteger(0);
+
+        sb.append(getClass().getSimpleName());
+        sb.append(" size: ").append(size).append(" data [");
+
+        AVLHelper.preOrder(root, e ->{
+            if (ai.get() > 0)
+                sb.append(", ");
+
+            sb.append("(");
+            sb.append(ai.get());
+            sb.append(")->");
+            sb.append(e);
+            ai.getAndIncrement();
+        });
+
+        sb.append("]");
+        return sb.toString();
+    }
 }
